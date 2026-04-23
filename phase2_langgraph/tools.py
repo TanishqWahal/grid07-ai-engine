@@ -2,7 +2,7 @@ from langchain.tools import tool
 
 @tool
 def mock_searxng_search(query: str):
-    """Search for recent news based on a query."""   # 👈 ADD THIS LINE
+    """Search for recent news based on a query."""   
 
     if "AI" in query:
         return "New AI model replacing junior developers"
