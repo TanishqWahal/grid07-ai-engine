@@ -10,7 +10,7 @@ def decide_topic(state):
     topic = fake_llm(state["persona"])
     return {
         "topic": topic,
-        "bot_id": state["bot_id"],   # 👈 ADD THIS
+        "bot_id": state["bot_id"],   
         "persona": state["persona"]
     }
 
@@ -20,7 +20,7 @@ def search_node(state):
     return {
         "context": result,
         "topic": state["topic"],
-        "bot_id": state["bot_id"],   # 👈 ADD
+        "bot_id": state["bot_id"],   
         "persona": state["persona"]
     }
 
